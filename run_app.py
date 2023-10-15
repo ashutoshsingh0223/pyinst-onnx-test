@@ -56,6 +56,7 @@ import time
 if __name__ == "__main__":
     path_to_main = os.path.join(os.path.dirname(__file__), "main.py")
     print(os.listdir(os.path.dirname(__file__)))
+    print(os.listdir(os.path.join(os.path.dirname(__file__), 'env/bin')))
     # sys.argv = [
     #     "./env/bin/python3.10",
     #     "-m"
@@ -68,7 +69,7 @@ if __name__ == "__main__":
 
     proc = Popen(
         [
-            "./env/bin/python3.10",
+            f"{os.path.join(os.path.dirname(__file__), 'env/bin/python3.10')}",
             "-m",
             "streamlit",
             "run",

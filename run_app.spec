@@ -4,7 +4,7 @@
 datas = [('./test_env', './env')]
 datas += [('./.streamlit', './.streamlit')]
 datas += [('./model.onnx', './model.onnx')]
-datas += [('./000016.jpg', '././000016.jpg')]
+datas += [('./coco_test.jpg', '././coco_test.jpg')]
 
 datas += [('./test_env/lib/python3.10/site-packages/typing_extensions.py', './typing_extensions.py')]
 datas += [('./test_env/lib/python3.10/site-packages/coloredlogs', './coloredlogs')]
